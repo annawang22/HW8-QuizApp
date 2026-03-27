@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "question": "What is newton's first law",
+      "type": "multiple_choice",
+      "options": ["F=ma", "every force has an equal and opposite force", "an object at rest stays at rest"],
+      "answer": "an object at rest stays at rest",
+      "level": "easy"
+    },
+    {
+      "question": "What is newton's second law",
+      "type": "multiple_choice",
+      "options": ["F=ma", "every force has an equal and opposite force", "an object at rest stays at rest"],
+      "answer": "F=ma",
+      "level": "easy"
+    },
+    {
+      "question": "A car increases its velocity from 10 m/s to 30 m/s in 5 seconds.",
+      "type": "free_response",
+      "answer": "4 m/s^2",
+      "level": "easy"
+    },
+    {
+      "question": "A 5 kg object experiences two forces: 20 N right and 5 N left. What is the acceleration?",
+      "type": "multiple_choice",
+      "options": ["1 m/s^2", "3 m/s^2", "5 m/s^2"],
+      "answer": "3 m/s^2",
+      "level": "medium"
+    },
+    {
+      "question": "A 10 kg box is pushed with a force of 50 N on a frictionless surface. Find the acceleration.",
+      "type": "free_response",
+      "answer": "5 m/s^2",
+      "level": "medium"
+    },
+    {
+      "question": "A 10 kg box is pulled with 50 N. Friction is 20 N opposing motion. What is the acceleration?",
+      "type": "multiple_choice",
+      "options": ["2 m/s^2", "3 m/s^2", "5 m/s^2"],
+      "answer": "3 m/s^2",
+      "level": "hard"
+    },
+    {
+      "question": "A 2 kg object is lifted 10 meters. Find the gravitational potential energy gained.",
+      "type": "free_response",
+      "answer": "196 J",
+      "level": "hard"
+    }
+  ]
+}
