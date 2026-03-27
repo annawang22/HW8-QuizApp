@@ -2,10 +2,13 @@
 The agent did everything I asked it to in my SPEC.md. It fully implemented my spec and passed all of my acceptance criteria on the first try.
 
 ## Where did you intervene? List each time you had to step in during Phase 2. Why was the intervention needed? Could a better spec have prevented it?
-I didn't have to intervene at all. I think that because I had specified at the top that this was going to be a command-line Python quiz app, this project was very straight forward to Copilot so it neither took super long or had trouble with my written SPEC.md.
+I didn't have to intervene at all. I think that because I had specified at the top that this was going to be a command-line Python quiz app, this project was very straight forward to Copilot so it didn't take super long nor have trouble with my written SPEC.md.
 
 ## How useful was the AI review? Did it catch real bugs? Did it miss anything important? Did it flag things that weren't actually problems?
-I think because I made this project really simple, any bugs that the AI review did catch were miniscul and 
+I think because I made this project really simple, any bugs that the AI review did catch were miniscule, in other words, on the high-level, the program would run as needed, but there might be some small bugs which wouldn't cause extreme inconvenience to the user. The AI review also picked up on cases that I hadn't thought of myself, but reading about them has now made me more aware of what could potentially go wrong and how to prevent it. After Phase 2, I saw that whenever a new user would type a password, the user wouldn't know if what they were typing was going to be recorded, so I wanted to see if Copilot would realize this, but it didn't pick that up as a problem. 
 
 ## Spec quality → output quality: In hindsight, what would you change about your spec to get a better result from the agent?
-## When would you use this workflow? Based on this experience, when do you think plan-delegate-review is better than conversational back-and-forth? When is it worse
+## When would you use this workflow? Based on this experience, when do you think plan-delegate-review is better than conversational back-and-forth? When is it worse?
+I think that it would be interesting for me to have provided a more complicated task. Secondly, I didn't really know what to write for the code structure, so I only had one request which was to have main.py be simply and just run the actual program and then the only other thing I said was "structure files in a clear way". I think that Copilot had taken this as to just write the entire program in main.py because that's the only file I technically provided. Therefore, I think moving forward if I don't have anything specific to say I think it's best to just leave it completely up to the agentic tool. I also feel like I would gotten a better result if I spent more time thinking about error cases, including small ones. 
+
+Based on this experience, I think that plan-delegate-review is better than conversational back-and-forth when you are trying to get started on a project and want a foundational framework/code to build off of. I don't think this would be a good approach if you are given someone else's code and you wanted to build from theirs and similarly with debugging, I think that conversational back-and-forth would be better. 
