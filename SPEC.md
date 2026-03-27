@@ -77,6 +77,7 @@ main.py - just starts the program
 - if JSON file is missing, print "Error: json file not found. please create bank and exit with code 1". 
 - if JSON is not formatted properly, print "Error: json format is invalid. please fix it and exit with code 2"
 - if JSON isn't a json file, print "error: you didn't upload json file, this isn't going to work exit with code 3"
+- Also, if time is up for the overall session, you can cut the user off and that will not be considered in the final result calculations
 
 ## REQUIRED FEATURES
 - local login system that prompts users for a username and password (passwords should not be easily discoverable)
