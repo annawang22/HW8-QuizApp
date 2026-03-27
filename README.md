@@ -1,4 +1,4 @@
-### The Agentic Build
+# The Agentic Build
 ## Description
 Instead of conversational AI coding, I tried a more structured, agentic approach to build a command-line Python physics quiz app.
 1) Wrote a detailed plan first (SPEC.md)
