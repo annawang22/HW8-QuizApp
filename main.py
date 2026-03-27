@@ -171,6 +171,26 @@ def timed_input(prompt: str, timeout_seconds: int):
         return None
 
 
+def get_hidden_password(prompt: str) -> str:
+    sys.stdout.write(prompt)
+    sys.stdout.flush()
+    password = ""
+    while True:
+        ch = msvcrt.getwch()
+        if ch in "\r\n":
+            print("")
+            return password
+        elif ch == "\b":
+            if password:
+                password = password[:-1]
+                sys.stdout.write("\b \b")
+                sys.stdout.flush()
+        else:
+            password += ch
+            sys.stdout.write("*")
+            sys.stdout.flush()
+
+
 def prompt_username_password():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
@@ -189,7 +209,7 @@ def prompt_username_password():
     if row:
         attempts = 3
         while attempts > 0:
-            password = getpass.getpass("Password: ")
+            password = get_hidden_password("Password: ")
             if verify_password(row[0], password):
                 print("Login successful")
                 conn.close()
@@ -202,8 +222,8 @@ def prompt_username_password():
     else:
         print("No account found. Creating a new user.")
         while True:
-            password = getpass.getpass("New password: ")
-            confirm = getpass.getpass("Confirm password: ")
+            password = get_hidden_password("New password: ")
+            confirm = get_hidden_password("Confirm password: ")
             if password != confirm:
                 print("Passwords do not match. try again.")
             elif len(password) < 6:
