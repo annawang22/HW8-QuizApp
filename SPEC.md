@@ -1,5 +1,5 @@
 ## Description
-Physics 1 Study App
+Command line Python Physics 1 Study App
 1) User is initally prompted to upload a valid JSON file of a question bank 
 2) User than asked on how long they want to study for in increments of 10 minutes so 10 minutes, 20 minutes, 30 minutes, etc.
 3) User can choose between doing multiple choice questions of free response questions
